@@ -1,0 +1,15 @@
+body{
+    background-color: aliceblue;
+}
+#textarea{
+    width: auto;
+    height: auto;
+    position: center;
+    margin: 50px 0px 0px 300px;
+}
+
+.container{
+    height: 30px;
+    position: center;
+    margin: 50px 0px 0px 300px;
+}
