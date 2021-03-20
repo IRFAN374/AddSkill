@@ -22,3 +22,9 @@ function loadFileAsText(){
   
     fileReader.readAsText(fileToLoad, "UTF-8");
   }
+  document.getElementById("inputTextToSave").addEventListener('ondbclick', ()=>{
+
+  })
+  fetch("https://api.textgears.com/spelling?text=&language=en-GB&key=QzDHhSFOTJUTOswK")
+  .then(response => response.JSON())
+  .then (data => console.log(data));
