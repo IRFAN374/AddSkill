@@ -12,29 +12,19 @@
 <body>
 
     <div class="container">
+        
+        <textarea name="text" rows="10" cols="50" placeholder="Text are" id="inputTextToSave"></textarea>
         <div class="subcontainer">
             <tr>
                 <td>Select a text File only:</td>
                 <td><input type="file" id="fileToLoad"></td>
                 <td><button onclick="loadFileAsText()">upload</button><td>
             </tr>
+            <br><br><hr>
         </div>
-        <textarea name="text" rows="10" cols="50" placeholder="Text are" id="inputTextToSave"></textarea>
     </div>
 
-    <script>
-        function loadFileAsText(){
-  var fileToLoad = document.getElementById("fileToLoad").files[0];
-
-  var fileReader = new FileReader();
-  fileReader.onload = function(fileLoadedEvent){
-      var textFromFileLoaded = fileLoadedEvent.target.result;
-      document.getElementById("inputTextToSave").value = textFromFileLoaded;
-  };
-
-  fileReader.readAsText(fileToLoad, "UTF-8");
-}
-    </script>
+    <script src="js/script.js"></script>
     
 </body>
 </html>
